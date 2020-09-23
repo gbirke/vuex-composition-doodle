@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p>This is a composition component with with ref state</p>
+    <p>
+      This is a composition component with with ref state, independent from Vuex
+    </p>
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>
     </p>
