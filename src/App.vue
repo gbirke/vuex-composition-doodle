@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <CompositionTest p1="First property" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import CompositionTest from "./components/CompositionTest.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    CompositionTest
   }
 };
 </script>
