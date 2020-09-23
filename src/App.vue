@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <CompositionTest p1="First property" />
+    <CompositionTest />
+    <vue-test1 />
   </div>
 </template>
 
 <script>
 import CompositionTest from "./components/CompositionTest.vue";
+import VueTest1 from "./components/VuexTest1.vue";
 
 export default {
   name: "App",
   components: {
-    CompositionTest
+    CompositionTest,
+    VueTest1
   }
 };
 </script>
