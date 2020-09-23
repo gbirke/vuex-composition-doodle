@@ -2,18 +2,25 @@
   <div id="app">
     <CompositionTest />
     <vue-test1 />
+    <vue-test2 />
   </div>
 </template>
 
 <script>
+import { provideStore } from "./components/composition/useStoreInjection";
 import CompositionTest from "./components/CompositionTest.vue";
 import VueTest1 from "./components/VuexTest1.vue";
+import VueTest2 from "./components/VuexTest2.vue";
 
 export default {
   name: "App",
+  setup() {
+    provideStore();
+  },
   components: {
     CompositionTest,
-    VueTest1
+    VueTest1,
+    VueTest2
   }
 };
 </script>
