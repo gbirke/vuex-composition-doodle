@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <vuex-test1 />
-    <vuex-test2 />
+    <vuex-classic />
+    <vuex-composition1 />
+    <vuex-composition2 />
     <CompositionTest />
   </div>
 </template>
@@ -9,8 +10,9 @@
 <script>
 import { provideStore } from "./components/composition/useStoreInjection";
 import CompositionTest from "./components/CompositionTest.vue";
-import VuexTest1 from "./components/VuexTest1.vue";
-import VuexTest2 from "./components/VuexTest2.vue";
+import VuexClassic from "./components/ClassicVuex.vue";
+import VuexComposition1 from "./components/VuexTest1.vue";
+import VuexComposition2 from "./components/VuexTest2.vue";
 
 export default {
   name: "App",
@@ -19,8 +21,9 @@ export default {
   },
   components: {
     CompositionTest,
-    VuexTest1,
-    VuexTest2
+    VuexClassic,
+    VuexComposition1,
+    VuexComposition2
   }
 };
 </script>
