@@ -6,7 +6,7 @@
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>
     </p>
-    <p v-on:click="toggle">Toggle</p>
+    <p><button v-on:click="toggle">Toggle</button></p>
   </div>
 </template>
 
