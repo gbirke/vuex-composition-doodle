@@ -1,7 +1,7 @@
-# mixed-vuex
+# Vuex and composition API
 
-This project demonstrates how to use Vuex with the Vue composition API,
-alongside "legacy" code that uses computed properties and methods to
+This example project demonstrates how to use Vuex with the Vue composition
+API, alongside "legacy" code that uses computed properties and methods to
 access the store.
 
 ## Project setup
