@@ -1,8 +1,8 @@
 <template>
   <div>
     <p>
-      This is a composition component with with Vuex, propagated from parent
-      context
+      This is a composition component with with Vuex, propagated from the root
+      component in the context
     </p>
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import { useParentStore } from "./composition/useParentStore";
+import { useStoreFromParam } from "./composition/useStoreFromParam";
 
 export default {
   setup(_, ctx) {
-    return useParentStore(ctx.parent.$store);
+    return useStoreFromParam(ctx.root.$store);
   }
 };
 </script>
