@@ -3,6 +3,7 @@
     <classic-vuex />
     <composition-vuex1 />
     <composition-vuex2 />
+    <composition-vuex3 />
     <pure-composition />
   </div>
 </template>
@@ -13,6 +14,7 @@ import PureComposition from "./components/PureComposition.vue";
 import ClassicVuex from "./components/ClassicVuex.vue";
 import CompositionVuex1 from "./components/CompositionVuex1.vue";
 import CompositionVuex2 from "./components/CompositionVuex2.vue";
+import CompositionVuex3 from "./components/CompositionVuex3.vue";
 
 export default {
   name: "App",
@@ -23,7 +25,8 @@ export default {
     PureComposition,
     ClassicVuex,
     CompositionVuex1,
-    CompositionVuex2
+    CompositionVuex2,
+    CompositionVuex3
   }
 };
 </script>

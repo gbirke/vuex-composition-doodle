@@ -1,7 +1,8 @@
 <template>
   <div>
     <p>
-      This is a composition component with with Vuex, injected in main Component
+      This is a composition component with with Vuex, loaded as a singleton in
+      the <code>setup</code> method.
     </p>
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>
@@ -11,11 +12,14 @@
 </template>
 
 <script>
-import { useInjectedStore } from "./composition/useStoreInjection";
+import { computed } from "@vue/composition-api";
+import store from "../store";
 
 export default {
   setup() {
-    return useInjectedStore();
+    const awesomeness = computed(() => store.state.awesomeness);
+    const toggle = () => store.commit("toggleAwesomeness");
+    return { awesomeness, toggle };
   }
 };
 </script>

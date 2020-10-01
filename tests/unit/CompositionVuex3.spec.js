@@ -1,14 +1,14 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
 import Vuex from "vuex";
 import CompositionAPI from "@vue/composition-api";
-import CompositionVuex2 from "@/components/CompositionVuex2.vue";
+import CompositionVuex3 from "@/components/CompositionVuex3.vue";
 import { StoreSymbol } from "@/components/composition/useStoreInjection";
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
 localVue.use(CompositionAPI);
 
-describe("CompositionVuex2.vue", () => {
+describe("CompositionVuex3.vue", () => {
   let store;
   let mutations;
 
@@ -25,7 +25,7 @@ describe("CompositionVuex2.vue", () => {
   });
 
   it("renders store state", () => {
-    const wrapper = shallowMount(CompositionVuex2, {
+    const wrapper = shallowMount(CompositionVuex3, {
       localVue,
       provide: { [StoreSymbol]: store }
     });
@@ -34,7 +34,7 @@ describe("CompositionVuex2.vue", () => {
   });
 
   it("triggers mutation on click store state", () => {
-    const wrapper = shallowMount(CompositionVuex2, {
+    const wrapper = shallowMount(CompositionVuex3, {
       localVue,
       provide: { [StoreSymbol]: store }
     });
