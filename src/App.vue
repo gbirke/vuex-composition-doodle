@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <vuex-classic />
-    <vuex-composition1 />
-    <vuex-composition2 />
-    <CompositionTest />
+    <classic-vuex />
+    <composition-vuex1 />
+    <composition-vuex2 />
+    <pure-composition />
   </div>
 </template>
 
 <script>
 import { provideStore } from "./components/composition/useStoreInjection";
-import CompositionTest from "./components/CompositionTest.vue";
-import VuexClassic from "./components/ClassicVuex.vue";
-import VuexComposition1 from "./components/VuexTest1.vue";
-import VuexComposition2 from "./components/VuexTest2.vue";
+import PureComposition from "./components/PureComposition.vue";
+import ClassicVuex from "./components/ClassicVuex.vue";
+import CompositionVuex1 from "./components/CompositionVuex1.vue";
+import CompositionVuex2 from "./components/CompositionVuex2.vue";
 
 export default {
   name: "App",
@@ -20,10 +20,10 @@ export default {
     provideStore();
   },
   components: {
-    CompositionTest,
-    VuexClassic,
-    VuexComposition1,
-    VuexComposition2
+    PureComposition,
+    ClassicVuex,
+    CompositionVuex1,
+    CompositionVuex2
   }
 };
 </script>

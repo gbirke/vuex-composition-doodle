@@ -1,13 +1,13 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
 import Vuex from "vuex";
 import CompositionAPI from "@vue/composition-api";
-import VuexTest1 from "@/components/VuexTest1.vue";
+import CompositionVuex1 from "@/components/CompositionVuex1.vue";
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
 localVue.use(CompositionAPI);
 
-describe("VuexTest1.vue", () => {
+describe("CompositionVuex1.vue", () => {
   let store;
   let mutations;
 
@@ -24,7 +24,7 @@ describe("VuexTest1.vue", () => {
   });
 
   it("renders store state", () => {
-    const wrapper = shallowMount(VuexTest1, {
+    const wrapper = shallowMount(CompositionVuex1, {
       localVue,
       store
     });
@@ -33,7 +33,7 @@ describe("VuexTest1.vue", () => {
   });
 
   it("triggers mutation on click store state", () => {
-    const wrapper = shallowMount(VuexTest1, {
+    const wrapper = shallowMount(CompositionVuex1, {
       localVue,
       store
     });
