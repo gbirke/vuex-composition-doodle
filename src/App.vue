@@ -5,6 +5,7 @@
     <composition-vuex2 />
     <composition-vuex3 />
     <pure-composition />
+    <pure-composition />
   </div>
 </template>
 
