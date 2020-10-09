@@ -4,6 +4,10 @@ This example project demonstrates how to use Vuex with the Vue composition
 API, alongside "legacy" code that uses computed properties and methods to
 access the store.
 
+See
+https://lebenplusplus.de/2020/09/27/integrating-vuex-with-the-vue-composition-api/
+for the full blog article.
+
 ## Project setup
 ```
 npm install
