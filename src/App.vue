@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import { provideStore } from "./components/composition/useStoreInjection";
 import PureComposition from "./components/PureComposition.vue";
 import ClassicVuex from "./components/ClassicVuex.vue";
 import CompositionVuex1 from "./components/CompositionVuex1.vue";
@@ -18,9 +17,6 @@ import CompositionVuex3 from "./components/CompositionVuex3.vue";
 
 export default {
   name: "App",
-  setup() {
-    provideStore();
-  },
   components: {
     PureComposition,
     ClassicVuex,
