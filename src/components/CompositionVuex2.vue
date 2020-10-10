@@ -1,8 +1,8 @@
 <template>
   <div>
     <p>
-      This is a composition component with with Vuex, loaded as a singleton in
-      the <code>setup</code> method.
+      This is a composition component with with Vuex.<br />
+      Store is loaded as a singleton in the <code>setup</code> method.
     </p>
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>

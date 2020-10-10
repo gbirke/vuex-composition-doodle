@@ -1,8 +1,8 @@
 <template>
   <div>
     <p>
-      This is a composition component with with <code>ref</code> state, doesn't
-      use Vuex.
+      This is a composition component with with <code>ref</code> state.<br />
+      Vuex state synchronized via Vuex plugin.
     </p>
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>

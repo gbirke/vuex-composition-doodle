@@ -1,7 +1,9 @@
 <template>
   <div>
     <p>
-      This is a composition component with with Vuex, injected in main Component
+      This is a composition component with with Vuex.<br />
+      Store is injected thorugh <code>provide</code> call in root component in
+      <code>main.js</code>.
     </p>
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>

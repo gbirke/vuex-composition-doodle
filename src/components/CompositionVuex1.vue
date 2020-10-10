@@ -1,8 +1,8 @@
 <template>
   <div>
     <p>
-      This is a composition component with with Vuex, propagated from the root
-      component in the context
+      This is a composition component with with Vuex.<br />
+      Store is propagated from the root component in the context.
     </p>
     <p>
       Awesomeness is <strong>{{ awesomeness }}</strong>
